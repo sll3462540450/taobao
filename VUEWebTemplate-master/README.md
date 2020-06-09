@@ -116,3 +116,97 @@ VS Code刚打开项目时读取配置会有些慢，可能需要一小会时间�
 需要在webStorm中设置项目的配置文件，选择webstorm.alias.js。具体操作：
 
 按下ctrl + alt + s 会打开设置，再搜索“Webpack”，在右侧会有个选择文件的输入框，点击输入框的右侧按钮，会弹出选择文件的菜单，选择本项目中的webstorm.alias.js文件，在右下角点击“OK”即可。
+
+
+此项目用到的核心插件：
+ axios  http://www.axios-js.com/docs/vue-axios.html
+ 
+ 
+ element   https://element.eleme.io/#/zh-CN
+ 引入
+ 
+ Lists.vue 界面：
+ ```
+   <router-link v-bind:to="'/list/'+list.id">
+                <img :src="list.img_arr[0]" class="index-img" />
+   </router-link>
+   
+
+ ```
+ 
+ ```
+      mounted() {
+    axios
+      .get("http://learn.tx2.qrqy.net/api/product/getListByCon")
+      .then(res => {
+        this.lists = res.data.ret.data;
+        console.log(res);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
+ ```
+ detail.vue  详情页面接收Lists 传来的id
+ ```
+ import axios from "axios";
+ 
+  methods: {
+    axiosChange(id) {
+      axios
+        .get("http://learn.tx2.qrqy.net/api/product/getById?id=" + id)
+        .then(res => {
+          this.list = res.data.ret;
+          this.$route.params.id;
+          console.log(res);
+        });
+    }
+  },
+    created() {
+    this.axiosChange(this.$route.params.id);
+  }
+ ```
+ 路由：
+ ```
+ import Router from 'vue-router'
+ Vue.use(Router)
+ ```
+ 
+ ```
+ const routes = [{
+    path: '/home',
+    name: 'home',
+    component: Home
+  },
+  {
+    path: '/list/:id',
+    name: 'detail',
+    component:Detail
+  },
+  {
+    path: '/find',
+    name: 'find',
+    component: Find
+  },
+  {
+    path: '/index',
+    name: 'index',
+    component: Index,
+  },
+  {
+    path: '/my',
+    name: 'my',
+    component: My
+  }
+]
+ ```
+ 
+ ```
+ // guard为路由实例添加全局守卫
+export default guard(new Router({
+  mode: 'history',
+  routes,
+  linkActiveClass: 'active'   //路由样式
+}))
+ ```
+ 
