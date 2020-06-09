@@ -1,0 +1,135 @@
+{
+  "id": "1867879",
+  "name": "淘宝",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2895978",
+      "name": "天猫超市",
+      "font_class": "tianmaochaoshi",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "4788005",
+      "name": "今日爆款",
+      "font_class": "jinribaokuan",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "6426028",
+      "name": "首页-选中",
+      "font_class": "shouye",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "6820877",
+      "name": "订单",
+      "font_class": "order-copy",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "7174476",
+      "name": "我 的",
+      "font_class": "wodedangxuan1-copy-copy",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "8473244",
+      "name": "饿了么",
+      "font_class": "changyonglogo40-copy",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "10981340",
+      "name": "微淘",
+      "font_class": "weitao",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "11381258",
+      "name": "每日返现（不带图标）",
+      "font_class": "meirifanxianbudaitubiao",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "13300394",
+      "name": "今日爆款",
+      "font_class": "jinribaokuan1",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "13988155",
+      "name": "充值中心",
+      "font_class": "chongzhizhongxin",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "2783062",
+      "name": "天猫",
+      "font_class": "tianmao",
+      "unicode": "e6e4",
+      "unicode_decimal": 59108
+    },
+    {
+      "icon_id": "3694192",
+      "name": "促销",
+      "font_class": "cuxiao",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "6887633",
+      "name": "优惠",
+      "font_class": "youhui1",
+      "unicode": "e6b9",
+      "unicode_decimal": 59065
+    },
+    {
+      "icon_id": "9270926",
+      "name": "天猫超市-购物车",
+      "font_class": "tianmaochaoshigouwuche",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "9487342",
+      "name": "淘宝",
+      "font_class": "taobao",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "9531190",
+      "name": "商品",
+      "font_class": "shangpin",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "9943974",
+      "name": "打折",
+      "font_class": "dazhe",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "13906019",
+      "name": "9.9特卖",
+      "font_class": "temai",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}
